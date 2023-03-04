@@ -1,0 +1,129 @@
+/* Main container */
+.main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+    -webkit-clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 78%, 0 100%, 0 100%, 0 0);
+    padding: 2rem;
+}
+
+/* Landing page container */
+.landing-page {
+    max-width: 1100px;
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left Landing Page */
+.left-landing-page {
+    flex-basis: 45%;
+    color: var(--white);
+    text-align: center;
+}
+
+.left-landing-page h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    text-align: start;
+    padding-bottom: 1rem;
+    margin: 0;
+    /* margin: 0 0 1rem; */
+}
+
+.left-landing-page p {
+    font-size: 1.3rem;
+    font-weight: lighter;
+    text-align: start;
+    padding-bottom: 1.5rem;
+}
+
+/* Button */
+.button {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.button input {
+    width: 100%;
+    height: 50px;
+    padding: 1rem;
+    border: none;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 2px;
+}
+
+.button button {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    padding: .8rem 1.4rem;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    background: var(--yellow);
+    color: var(--white);
+    z-index: 2;
+}
+
+/* Right Landing Page */
+.right-landing-page {
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.right-landing-page img {
+    max-width: 100%;
+    /* width: 300px; */
+    height: auto;
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 700px) {
+
+    html {
+        font-size: 58.5%;
+        scroll-behavior: smooth;
+    }
+
+    .landing-page {
+        flex-direction: column;
+        height: auto;
+        padding: 2.5rem;
+    }
+
+    .left-landing-page,
+    .right-landing-page {
+        margin-bottom: 2rem;
+    }
+
+    .main .landing-page .left-landing-page h1 {
+        text-align: center;
+    }
+
+    .main .landing-page .left-landing-page p {
+        text-align: center;
+    }
+
+    .main .right-landing-page img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    html {
+        font-size: 54.5%;
+        scroll-behavior: smooth;
+    }
+}

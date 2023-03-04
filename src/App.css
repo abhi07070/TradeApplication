@@ -1,0 +1,42 @@
+:root {
+  --yellow: #f4900c;
+  --white: #fff;
+  --black: #000;
+  --black-blue: #0f1625;
+  --blue: #1b3061;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+p{
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--blue);
+}
+
+h3{
+  font-size: 2rem;
+  margin: 0;
+  text-align: center;
+  font-weight: lighter;
+  color: var(--blue);
+}
+
+h4{
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
